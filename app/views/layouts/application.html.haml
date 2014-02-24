@@ -1,0 +1,21 @@
+!!! 5
+%html(lang="en")
+  %head
+    %meta(charset="utf-8")
+    %meta(http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1")
+    %meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    %link{:href => "/favicon.ico", :rel => "icon", :type => "image/x-icon"}/
+    %link{:href => "/favicon.ico", :rel => "shortcut icon", :type => "image/x-icon"}/
+    %meta{:content => "Металлургия", :property => "og:description"}
+    %title= "Металлургия"
+    = stylesheet_link_tag "application", :media => "all"
+
+  %body
+    = render "layouts/header"
+    .main
+      .container#main_container
+        .content
+          = bootstrap_flash
+          = yield
+
+    = render "layouts/footer"
