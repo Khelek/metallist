@@ -1,0 +1,25 @@
+ru:
+  welcome:
+    form:
+      prohibite_this_news_from_being_saved: зафиксировано во время сохранения
+      no_more_than_140_characters:          Не больше 140 символов
+      this_is_main_photo: Это фото будет отображаться как главное фото в новости
+    index:
+      edit:
+        edit_news: 		Редактировать новость
+      add_news: 		Добавить новость
+      back: 			Назад
+
+  days:
+    day: день
+    few_days: дня
+    many_days: дней
+
+  time:
+    formats:
+      default: "%d-%m-%Y %H:%M"
+  date:
+    order:
+      - :day
+      - :month
+      - :year

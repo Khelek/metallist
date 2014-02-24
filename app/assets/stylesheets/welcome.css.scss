@@ -20,8 +20,29 @@ body {
         margin-left: 70px;
         font-family: fantasy;
         font-size: 65px;
+        line-height: 70px;
     }
     img {
         max-width: 100%;
     }
+}
+
+.new {
+    clear: both;
+    margin: 0.5%;
+}
+
+.main_photo {
+  width: 500px;
+  height: auto;
+  float: right;
+  margin: 10px;
+}
+
+
+/*to application.css*/
+.main .content {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px
 }

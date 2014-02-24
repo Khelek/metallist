@@ -10,8 +10,16 @@
  *
  *= require_self
  *= require_tree .
+ *= require twitter-bootstrap-static/bootstrap
  */
 
+/*
+  FIXME: не инклюдится почему то
+  */
 body {
     margin: 0;
+}
+
+.main {
+    margin: 0 auto;
 }

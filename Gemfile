@@ -15,6 +15,10 @@ gem 'sqlite3'
 
 gem 'validates'
 gem 'draper'
+gem 'ckeditor'
+gem 'carrierwave'
+gem 'rmagick'
+gem 'rails-i18n', '~> 3.0.0.pre'
 
 gem 'twitter-bootstrap-rails'
 gem 'bootstrap_flash_messages'

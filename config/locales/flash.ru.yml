@@ -1,0 +1,11 @@
+ru:
+  flash_messages:
+      news:
+        create:
+          success: Новость создана
+          error: Ошибка в заполнении полей
+        update:
+          success: Новость обновлена
+          error: Ошибка в заполении полей
+        destroy:
+          success: Новость удалена
