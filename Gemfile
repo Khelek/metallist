@@ -61,6 +61,7 @@ group :production do
   gem 'capi'
   gem 'capistrano_colors'
   gem 'pg'
+  gem 'backup'
 end
 
 # To use ActiveModel has_secure_password
