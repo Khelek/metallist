@@ -61,6 +61,13 @@ namespace :deploy do
   end
 end
 
+namespace :log do
+  desc "Watch tailf env log"
+  task :tailf do
+    stream("tailf /u/apps/#{application}/current/log/#{rails_env}.log")
+  end
+end
+
 before 'deploy:finalize_update', 'deploy:symlink_db'
 before 'deploy:finalize_update', 'deploy:assets:symlink'
 after 'deploy:update_code', 'deploy:assets:precompile'
