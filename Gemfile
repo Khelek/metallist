@@ -16,6 +16,7 @@ gem 'sqlite3'
 gem 'draper'
 gem 'ckeditor'
 gem 'carrierwave'
+gem 'mini_magick'
 gem 'rmagick'
 gem 'rails-i18n', '~> 3.0.0.pre'
 
