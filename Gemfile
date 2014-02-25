@@ -13,7 +13,6 @@ gem 'enumerize'
 
 gem 'sqlite3'
 
-gem 'validates'
 gem 'draper'
 gem 'ckeditor'
 gem 'carrierwave'
