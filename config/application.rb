@@ -11,6 +11,7 @@ end
 
 module Metallist
   class Application < Rails::Application
+    config.autoload_paths += Dir["#{config.root}/lib/**/", "#{config.root}/app/models/ckeditor"]
     config.i18n.default_locale = :ru
     config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
     config.encoding = "utf-8"

@@ -7,4 +7,12 @@ class NewsController < ApplicationController
       render action: :new, flash: :error
     end
   end
+
+  def index
+    @news = News.all #FIXME paginate add
+  end
+
+  def show
+    @news = News.find params[:id]
+  end
 end

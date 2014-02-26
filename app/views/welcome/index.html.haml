@@ -1,7 +1,9 @@
 %h1 Новости
 
-%h3= t('.add_news')
-= render partial: 'form', locals: {action: :create}
+- if signed_as_admin?
+  = link_to t('.add_news'), new_admin_news_path, class: 'btn btn-info'
+  
+= paginate @news
 - @news.each do |news|
   .new
     .title
@@ -12,4 +14,5 @@
       %img
     %p
       != news.body
+= paginate @news
     

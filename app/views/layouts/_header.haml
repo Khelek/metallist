@@ -1,3 +1,10 @@
 .header
   .header-bottom
-    РегионВторМет
+    .text
+      РегионВторМет
+    .navbar.navbar-inverse
+      .navbar-inner
+        %ul.nav
+          - pages_top_navbar.each do |page|
+            %li.divider-vertical= link_to page.title, page_path(page)
+          %li.divider-vertical= link_to t('.+add_page'), new_admin_page_path if signed_as_admin?

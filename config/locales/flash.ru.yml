@@ -9,3 +9,21 @@ ru:
           error: Ошибка в заполении полей
         destroy:
           success: Новость удалена
+      sessions:
+        create:
+          success: 'Вы вошли на сайт.'
+          error:   'Аутентификация не удалась. Проверьте логин/пароль.'
+  flash:
+    controllers:
+      sessions:
+        create:
+          success: 'Вы вошли на сайт.'
+          error:   'Аутентификация не удалась. Проверьте логин/пароль.'
+      admin:
+        news:
+          create:
+            success: 'Новость создана успешно'
+            error: 'Не удалось создать новость'
+          update:
+            success: 'Новость обновлена'
+            error: 'Не удалось обновить новость'
