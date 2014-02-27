@@ -1,9 +1,17 @@
 Metallist::Application.routes.draw do
+
   mount Ckeditor::Engine => '/ckeditor'
 
   root to:  "welcome#index"
 
-  resource :news, only: :create
+  resources :pages, only: :show
+  resources :news
+  resource :session
+  namespace :admin do
+    resources :page
+    resources :news
+    root to: "welcome#index"
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

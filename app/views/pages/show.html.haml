@@ -1,0 +1,7 @@
+.page
+  .title
+    %h1
+      = @page.title
+      = link_to t('.(edit)'), edit_admin_page_path(@page), class: 'edit' if signed_as_admin?
+  %p
+    != @page.body

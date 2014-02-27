@@ -1,9 +1,17 @@
 require 'test_helper'
 
 class NewsControllerTest < ActionController::TestCase
-  test "should get create" do
-    get :create
+  setup do
+    @news = create :news
+  end
+  
+  test "should get index" do
+    get :index
     assert_response :success
   end
 
+  test "should get show" do
+    get :show, id: @news.id
+    assert_response :success
+  end
 end

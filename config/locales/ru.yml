@@ -1,4 +1,31 @@
 ru:
+  layouts:
+    header:
+      RegionVtorMet: 'РегионВторМет'
+      adminka: 'Админка'
+      +add_page: '+ Добавить страницу'
+      news: 'Новости'
+    admin:
+      shared:
+        navigation:
+          admin_home: 'Главная админки'
+          home: 'Главная'
+          adminka: 'Админка'
+          pages: 'Страницы'
+          news: 'Новости'
+          logout: 'Выйти'
+  pages:
+    show:
+      '(edit)': '(Редактировать)'
+  news:
+    show:
+      '(edit)': '(Редактировать)'
+  views:
+    pagination:
+      next: 'В конец'
+      last: 'Следующая'
+      first: 'В начало'
+      previous: 'Предыдущая'
   welcome:
     form:
       prohibite_this_news_from_being_saved: зафиксировано во время сохранения
@@ -9,6 +36,39 @@ ru:
         edit_news: 		Редактировать новость
       add_news: 		Добавить новость
       back: 			Назад
+  sessions:
+    new:
+      login: 'Войти'
+  admin:
+    news:
+      form:
+        prohibite_this_news_from_being_saved: зафиксировано во время сохранения
+        no_more_than_140_characters:          Не больше 140 символов
+        this_is_main_photo: Это фото будет отображаться как главное фото в новости
+      index:
+        title: 'Новости'
+        edit: 'Редактировать'
+        new: 'Создать новость'
+        destroy: 'Удалить'
+        confirm: 'Правда хотите удалить новость?'
+      new:
+        edit:
+          edit_news: 		Редактировать новость
+        add_news: 		Добавить новость
+        back: 			Назад
+        view: 'Показать новость'
+    page:
+      form:
+        no_more_than_140_characters:          Не больше 140 символов
+      index:
+        link_to_page: 'Ссылка на страницу'
+        yes: 'Да'
+        no: 'Нет'
+        title: 'Страницы'
+        edit: 'Редактировать'
+        new: 'Создать страницу'
+        destroy: 'Удалить'
+        confirm: 'Правда хотите удалить страницу?'
 
   days:
     day: день

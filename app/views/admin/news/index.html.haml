@@ -1,0 +1,26 @@
+.page-header
+  %h1=t '.title'
+
+= link_to t('.new'), new_admin_news_path, :class => 'btn btn-primary'
+
+= paginate @news
+
+%table.table.table-striped
+  %thead
+    %tr
+      %th= News.human_attribute_name :title
+      %th
+        .nowrap= News.human_attribute_name :published_at
+      %th= News.human_attribute_name :actions
+  %tbody
+    - @news.each do |news|
+      %tr
+        %td= link_to news.title, news_path(news)
+        %td
+          .nowrap= l news.published_at
+        %td
+          .btn-group.btn-group-vertical
+            = link_to t('.edit'), edit_admin_news_path(news), :class => 'btn btn-mini'
+            = link_to t('.destroy'), admin_news_path(news), :method => :delete, :data => { :confirm => t('.confirm') }, :class => 'btn btn-mini btn-danger'
+
+= paginate @news

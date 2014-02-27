@@ -11,7 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140224220107) do
+ActiveRecord::Schema.define(:version => 20140225211117) do
+
+  create_table "admins", :force => true do |t|
+    t.string   "login"
+    t.string   "password"
+    t.string   "password_digest"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
 
   create_table "ckeditor_assets", :force => true do |t|
     t.string   "data_file_name",                  :null => false
@@ -36,6 +44,15 @@ ActiveRecord::Schema.define(:version => 20140224220107) do
     t.text     "photo"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+  end
+
+  create_table "pages", :force => true do |t|
+    t.text     "title"
+    t.text     "body"
+    t.boolean  "place_in_top_navbar"
+    t.boolean  "place_in_side_navtabs"
+    t.datetime "created_at",            :null => false
+    t.datetime "updated_at",            :null => false
   end
 
 end
