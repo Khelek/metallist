@@ -6,7 +6,7 @@
       .navbar.navbar-inverse
         .navbar-inner
           %ul.nav
-            %li.divider-vertical= link_to t('.news'), news_index_path if signed_as_admin?
+            %li.divider-vertical= link_to t('.news'), news_index_path
             - pages_top_navbar.each do |page|
               %li.divider-vertical= link_to page.title, page_path(page)
             %li.divider-vertical= link_to t('.adminka'), admin_root_path if signed_as_admin?
