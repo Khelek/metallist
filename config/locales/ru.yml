@@ -4,6 +4,7 @@ ru:
       RegionVtorMet: 'РегионВторМет'
       adminka: 'Админка'
       +add_page: '+ Добавить страницу'
+      news: 'Новости'
     admin:
       shared:
         navigation:

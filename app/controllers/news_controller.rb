@@ -9,7 +9,7 @@ class NewsController < ApplicationController
   end
 
   def index
-    @news = News.all #FIXME paginate add
+    @news = News.order('published_at DESC').page(params[:page]).per(5)
   end
 
   def show
