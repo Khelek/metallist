@@ -10,7 +10,8 @@
     %tr
       %th= Page.human_attribute_name :title
       %th= t('.link_to_page')
-      %th= Page.human_attribute_name :place_in_navbar
+      %th= Page.human_attribute_name :place_in_top_navbar
+      %th= Page.human_attribute_name :place_in_side_navtabs
       %th
         .nowrap= Page.human_attribute_name :created_at
       %th= Page.human_attribute_name :actions
@@ -19,7 +20,8 @@
       %tr
         %td= page.title
         %td= link_to t('.link_to_page'), page_path(page)
-        %td= page.place_in_navbar ? t('.yes') : t('.no')
+        %td= page.place_in_top_navbar ? t('.yes') : t('.no')
+        %td= page.place_in_side_navtabs ? t('.yes') : t('.no')
         %td
           .nowrap= l page.created_at
         %td

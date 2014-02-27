@@ -1,4 +1,24 @@
 ru:
+  layouts:
+    header:
+      RegionVtorMet: 'РегионВторМет'
+      adminka: 'Админка'
+      +add_page: '+ Добавить страницу'
+    admin:
+      shared:
+        navigation:
+          admin_home: 'Главная админки'
+          home: 'Главная'
+          adminka: 'Админка'
+          pages: 'Страницы'
+          news: 'Новости'
+          logout: 'Выйти'
+  pages:
+    show:
+      '(edit)': '(Редактировать)'
+  news:
+    show:
+      '(edit)': '(Редактировать)'
   views:
     pagination:
       next: 'В конец'
@@ -36,9 +56,13 @@ ru:
         add_news: 		Добавить новость
         back: 			Назад
         view: 'Показать новость'
-        
     page:
+      form:
+        no_more_than_140_characters:          Не больше 140 символов
       index:
+        link_to_page: 'Ссылка на страницу'
+        yes: 'Да'
+        no: 'Нет'
         title: 'Страницы'
         edit: 'Редактировать'
         new: 'Создать страницу'

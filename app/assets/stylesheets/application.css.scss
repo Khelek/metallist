@@ -13,10 +13,20 @@
  *= require twitter-bootstrap-static/bootstrap
  */
 
+#body {
+    padding: 0;
+}
 
-.title h1 {
-    font-size: 50px;
-    line-height: 52px; 
+.title {
+    h1 {
+        font-size: 50px;
+        line-height: 52px; 
+    }
+    h2>a {
+        color: #333;
+        font-size: 42px;
+        line-height: 45px;
+    }
 }
 
 
@@ -36,16 +46,22 @@
     .header-bottom {
         position: absolute;
         bottom: 1px;
-        width: 100%;
+        width: inherit;
         .text {
-            margin-left: 70px;
             font-family: fantasy;
+            width: 90%;
             font-size: 65px;
             line-height: 70px;
             text-shadow: -2px -3px 3px grey;
+            margin: 0 auto;
+            a {
+                color: white;
+            }
         }
         .navbar {
-            margin: 0 1% -20px;
+            margin: 0 auto;
+            margin-bottom: -5px;
+            width: 90%;
         }
     }
     img {
@@ -55,4 +71,10 @@
 
 .pagination {
     clear: both;
+}
+
+h1 .edit {
+    font-size: 20px;
+    margin-bottom: 4px;
+    vertical-align: middle;
 }

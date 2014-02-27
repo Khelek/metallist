@@ -1,2 +1,3 @@
-%h1 Admin::Page#edit
-%p Find me in app/views/admin/page/edit.html.haml
+%h1= t('.edit_news')
+= render partial: 'form', locals: {action: :update}
+= link_to t('.back'), admin_page_index_path, class: "btn"

@@ -3,11 +3,10 @@
 - if signed_as_admin?
   = link_to t('.add_news'), new_admin_news_path, class: 'btn btn-info'
   
-= paginate @news
 - @news.each do |news|
   .new
     .title
-      %h2= news.title
+      %h2= link_to news.title, news_path(news)
       %small= news.published_at
     %p
       = image_tag news.photo, class: [:main_photo, 'img-polaroid']

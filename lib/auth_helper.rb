@@ -3,7 +3,7 @@ module AuthHelper
     session[:admin_login] = admin.login
   end
 
-  def sign_out(admin)
+  def sign_out
     session[:admin_login] = nil
   end
 

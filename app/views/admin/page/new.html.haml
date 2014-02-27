@@ -1,2 +1,3 @@
-%h1 Admin::Page#new
-%p Find me in app/views/admin/page/new.html.haml
+%h1= t('.new_page')
+= render partial: 'form', locals: {action: :create}
+= link_to t('.back'), admin_page_index_path, class: "btn"

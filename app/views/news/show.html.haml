@@ -2,7 +2,7 @@
   .title
     %h1
       = @news.title
-      = link_to t('.(edit)'), edit_admin_news_path(@news)
+      = link_to t('.(edit)'), edit_admin_news_path(@news), class: 'edit' if signed_as_admin?
     %small= @news.published_at
   %p
     = image_tag @news.photo, class: [:main_photo, 'img-polaroid']
