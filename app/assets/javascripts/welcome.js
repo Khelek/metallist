@@ -11,8 +11,7 @@ function init() {
   var myLatLng = new google.maps.LatLng(54.3224699, 48.3568821);
   var marker = new google.maps.Marker({
     position: myLatLng,
-    map: map,
-    icon: 'assets/rails.png'
+    map: map
   });
 }
 init();
