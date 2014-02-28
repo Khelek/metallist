@@ -1,7 +1,12 @@
+= render 'googlescripts'
 .row-fluid
   .span6
     %h1= t('.map')
-    %h1= t('.history')
+    .map
+      #map
+    %h1= @history.title
+    != @history.body
+      
   .span6.news
     %h1= t('.news')
     - @news.each do |news|
@@ -15,3 +20,4 @@
         %br
         %small.clearfix= news.published_at
     = link_to t(".all_news"), news_index_path, class: 'btn'
+= javascript_include_tag "welcome"

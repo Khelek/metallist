@@ -80,6 +80,7 @@ GEM
     factory_girl_rails (4.3.0)
       factory_girl (~> 4.3.0)
       railties (>= 3.0.0)
+    gmaps4rails (2.1.2)
     haml (4.0.5)
       tilt
     haml-rails (0.4)
@@ -206,6 +207,7 @@ GEM
     uglifier (2.4.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    underscore-rails (1.5.2)
     unicorn (4.8.0)
       kgio (~> 2.6)
       rack
@@ -234,6 +236,7 @@ DEPENDENCIES
   draper
   enumerize
   factory_girl_rails
+  gmaps4rails
   haml
   haml-rails
   jquery-rails
@@ -257,6 +260,7 @@ DEPENDENCIES
   turn
   twitter-bootstrap-rails
   uglifier (>= 1.0.3)
+  underscore-rails
   unicorn
   untranslated
   validates

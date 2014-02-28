@@ -4,3 +4,21 @@ ru:
       admin:
         login: Логин
         password: Пароль
+      news:
+        title: 'Заголовок'
+        published_at: 'Когда опубликована'
+        actions: 'Действия'
+        body: 'Содержимое'
+        photo: 'Фото'
+      page:
+        title: 'Заголовок'
+        place_in_top_navbar: 'Поместить в верхнее меню'
+        place_in_side_navtabs: 'Поместить в боковое меню'
+        created_at: 'Когда создана'
+        actions: 'Действия'
+        body: 'Содержимое'          
+    models:
+      news: 'новость'
+      page: 'страницу'
+      admin: 'Администратор'
+        
