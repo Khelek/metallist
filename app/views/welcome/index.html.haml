@@ -1,1 +1,17 @@
-= render template: 'news/index'
+.row-fluid
+  .span6
+    %h1= t('.map')
+    %h1= t('.history')
+  .span6.news
+    %h1= t('.news')
+    - @news.each do |news|
+      .well
+        %h4= link_to news.title, news_path(news)
+        .pull-left
+          != strip_tags news.body.first(400)
+          %b ...
+        %a.pull-right{ href: news_path(news) }
+          = image_tag news.photo.thumb, class: [:main_photo_thumb, 'pull-right']
+        %br
+        %small.clearfix= news.published_at
+    = link_to t(".all_news"), news_index_path, class: 'btn'

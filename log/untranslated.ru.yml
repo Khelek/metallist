@@ -1,0 +1,17 @@
+---
+ru:
+  news:
+    index:
+      add_news: ''
+  welcome:
+    index:
+      map: ''
+      history: ''
+      news: ''
+      all_news: ''
+  admin:
+    news:
+      edit:
+        edit_news: ''
+        view: ''
+        back: ''
