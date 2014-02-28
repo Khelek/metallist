@@ -5,6 +5,9 @@ ru:
       adminka: 'Админка'
       +add_page: '+ Добавить страницу'
       news: 'Новости'
+    dropdown:
+      we_accept: 'Мы принимаем'
+      we_are_doing: 'Мы занимаемся'
     footer:
       youth_initiative_centre: 'Молодёжный Инициативный центр'
       this_project_develop_by_programmers_of_ulmic: 'Этот проект разработан отрядом программистов МИЦ'

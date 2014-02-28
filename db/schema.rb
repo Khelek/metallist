@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140225211117) do
+ActiveRecord::Schema.define(:version => 20140227211847) do
 
   create_table "admins", :force => true do |t|
     t.string   "login"
@@ -53,6 +53,7 @@ ActiveRecord::Schema.define(:version => 20140225211117) do
     t.boolean  "place_in_side_navtabs"
     t.datetime "created_at",            :null => false
     t.datetime "updated_at",            :null => false
+    t.string   "slug"
   end
 
 end

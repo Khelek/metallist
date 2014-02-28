@@ -6,7 +6,16 @@
       .navbar.navbar-inverse
         .navbar-inner
           %ul.nav
+            - slug_pages = pages_with_slug
             %li.divider-vertical= link_to t('.news'), news_index_path
+            - for_dropdown_slug_pages = ["colored_scrap", "rare_earth_metal", "black_scrap"]
+            = render partial: 'layouts/dropdown', locals: {title: 'we_accept', for_dropdown_slug_pages: for_dropdown_slug_pages, slug_pages: slug_pages}
+            - for_dropdown_slug_pages = ["sale_products", "services"]
+            = render partial: 'layouts/dropdown', locals: {title: 'we_are_doing', for_dropdown_slug_pages: for_dropdown_slug_pages, slug_pages: slug_pages}
+            - page = page_by_slug "contacts"
+            %li.divider-vertical= link_to page.title, page_path(page)
+            - page = page_by_slug "vacancy"
+            %li.divider-vertical= link_to page.title, page_path(page)
             - pages_top_navbar.each do |page|
               %li.divider-vertical= link_to page.title, page_path(page)
             %li.divider-vertical= link_to t('.adminka'), admin_root_path if signed_as_admin?

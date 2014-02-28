@@ -1,0 +1,8 @@
+%li.dropdown
+  %a.dropdown-toggle{href: "#", data: {toggle: 'dropdown'}}
+    = t('.' << title)
+    %b.caret
+  %ul.dropdown-menu
+    - for_dropdown_slug_pages.each do |slug|
+      - page = slug_pages.select{|page| page.slug == slug}.first
+      %li= link_to page.title, page_path(page)
