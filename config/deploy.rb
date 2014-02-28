@@ -64,7 +64,7 @@ end
 namespace :log do
   desc "Watch tailf env log"
   task :tailf do
-    stream("tailf #{shared_path}/log/unicorn.stderr.log")
+    stream("tailf #{shared_path}/log/#{rails_env}.log")
   end
 end
 
