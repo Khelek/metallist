@@ -13,6 +13,10 @@ gem 'enumerize'
 
 gem 'sqlite3'
 
+gem 'untranslated'
+gem 'gmaps4rails'
+gem 'underscore-rails'
+
 gem 'draper'
 gem 'ckeditor'
 gem 'carrierwave'

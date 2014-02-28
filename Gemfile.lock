@@ -80,6 +80,7 @@ GEM
     factory_girl_rails (4.3.0)
       factory_girl (~> 4.3.0)
       railties (>= 3.0.0)
+    gmaps4rails (2.1.2)
     haml (4.0.5)
       tilt
     haml-rails (0.4)
@@ -87,6 +88,7 @@ GEM
       activesupport (>= 3.1, < 4.1)
       haml (>= 3.1, < 4.1)
       railties (>= 3.1, < 4.1)
+    hash-deep-merge (0.1.1)
     highline (1.6.20)
     hike (1.2.3)
     i18n (0.6.1)
@@ -205,10 +207,14 @@ GEM
     uglifier (2.4.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    underscore-rails (1.5.2)
     unicorn (4.8.0)
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
+    untranslated (1.0.2)
+      hash-deep-merge
+      i18n
     validates (0.0.8)
       activemodel (>= 3.0.0)
       activesupport (>= 3.0.0)
@@ -230,6 +236,7 @@ DEPENDENCIES
   draper
   enumerize
   factory_girl_rails
+  gmaps4rails
   haml
   haml-rails
   jquery-rails
@@ -253,5 +260,7 @@ DEPENDENCIES
   turn
   twitter-bootstrap-rails
   uglifier (>= 1.0.3)
+  underscore-rails
   unicorn
+  untranslated
   validates

@@ -5,6 +5,9 @@ ru:
       adminka: 'Админка'
       +add_page: '+ Добавить страницу'
       news: 'Новости'
+    dropdown:
+      we_accept: 'Мы принимаем'
+      we_are_doing: 'Мы занимаемся'
     footer:
       youth_initiative_centre: 'Молодёжный Инициативный центр'
       this_project_develop_by_programmers_of_ulmic: 'Этот проект разработан отрядом программистов МИЦ'
@@ -21,6 +24,8 @@ ru:
     show:
       '(edit)': '(Редактировать)'
   news:
+    index:
+      add_news: 'Добавить новость'
     show:
       '(edit)': '(Редактировать)'
   views:
@@ -35,35 +40,41 @@ ru:
       no_more_than_140_characters:          Не больше 140 символов
       this_is_main_photo: Это фото будет отображаться как главное фото в новости
     index:
-      edit:
-        edit_news: 		Редактировать новость
-      add_news: 		Добавить новость
-      back: 			Назад
+      map: 'Как доехать'
+      news: 'Новости'
+      all_news: 'Все новости'
   sessions:
     new:
       login: 'Войти'
   admin:
+    welcome:
+      index:
+        welcome: 'Добро пожаловать в админку сайта!'
     news:
       form:
         prohibite_this_news_from_being_saved: зафиксировано во время сохранения
         no_more_than_140_characters:          Не больше 140 символов
         this_is_main_photo: Это фото будет отображаться как главное фото в новости
       index:
+        add_news: 'Добавить новость'
         title: 'Новости'
         edit: 'Редактировать'
         new: 'Создать новость'
         destroy: 'Удалить'
         confirm: 'Правда хотите удалить новость?'
       new:
-        edit:
-          edit_news: 		Редактировать новость
+        new_news: 'Создать новость'
         add_news: 		Добавить новость
         back: 			Назад
-        view: 'Показать новость'
+      edit:
+        edit_news: 'Редактировать новость'
+        back: 'Назад'
     page:
       form:
         no_more_than_140_characters:          Не больше 140 символов
       index:
+        'no': 'Нет'
+        'yes': 'Да'
         link_to_page: 'Ссылка на страницу'
         yes: 'Да'
         no: 'Нет'
@@ -72,6 +83,12 @@ ru:
         new: 'Создать страницу'
         destroy: 'Удалить'
         confirm: 'Правда хотите удалить страницу?'
+      new:
+        new_page: 'Создать страницу' 
+        back: 'Назад'
+      edit:
+        edit_page: 'Редактировать страницу'
+        back: 'Назад'
 
   days:
     day: день
