@@ -6,7 +6,7 @@ ru:
       +add_page: '+ Добавить страницу'
       news: 'Новости'
     dropdown:
-      we_accept: 'Мы принимаем'
+      we_accept: 'Закупаем'
       we_are_doing: 'Мы занимаемся'
     footer:
       youth_initiative_centre: 'Молодёжный Инициативный центр'
@@ -41,6 +41,7 @@ ru:
       this_is_main_photo: Это фото будет отображаться как главное фото в новости
     index:
       map: 'Как доехать'
+      address: 'Ульяновск, улица Автомобилистов, 16а'
       news: 'Новости'
       all_news: 'Все новости'
   sessions:
