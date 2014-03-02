@@ -11,9 +11,11 @@
             - slug_pages = pages_with_slug
             - for_dropdown_slug_pages = ["colored_scrap", "rare_earth_metal", "black_scrap"]
             = render partial: 'layouts/dropdown', locals: {title: 'we_accept', for_dropdown_slug_pages: for_dropdown_slug_pages, slug_pages: slug_pages}
-            - for_dropdown_slug_pages = ["sale_products", "services"]
-            = render partial: 'layouts/dropdown', locals: {title: 'we_are_doing', for_dropdown_slug_pages: for_dropdown_slug_pages, slug_pages: slug_pages}
 
+            - page = page_by_slug "sale_products"
+            %li.divider-vertical= link_to page.title, page_path(page)
+            - page = page_by_slug "services"
+            %li.divider-vertical= link_to page.title, page_path(page)
             - page = page_by_slug "contacts"
             %li.divider-vertical= link_to page.title, page_path(page)
             - page = page_by_slug "vacancy"
