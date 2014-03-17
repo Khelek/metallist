@@ -4,6 +4,12 @@ ru:
       admin:
         login: Логин
         password: Пароль
+      user:
+        email: 'Электрoнная почта'
+        password: 'Пароль'
+        first_name: 'Имя'
+        last_name: 'Фамилия'
+        password_confirmation: 'Подтверждение пароля'
       news:
         title: 'Заголовок'
         published_at: 'Когда опубликована'
@@ -21,4 +27,10 @@ ru:
       news: 'новость'
       page: 'страницу'
       admin: 'Администратор'
-        
+    errors:
+      messages:
+        password_is_wrong: 'не верный'
+        password_not_valid: 'Пароль должен быть от 5 до 30 символов'
+        blank: 'Поле не может быть пустым'
+        confirmation: 'Не совпадает с подтверждением'
+        user_should_not_exists: 'Пользователь с таким email не найден!'

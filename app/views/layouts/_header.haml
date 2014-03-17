@@ -22,5 +22,7 @@
             %li.divider-vertical= link_to page.title, page_path(page)
             - pages_top_navbar.each do |page|
               %li.divider-vertical= link_to page.title, page_path(page)
+            %li.divider-vertical= link_to 'Зарегистрироваться', new_users_path
+            %li.divider-vertical= link_to 'Войти', new_session_path
             %li.divider-vertical= link_to t('.adminka'), admin_root_path if signed_as_admin?
             %li.divider-vertical= link_to t('.+add_page'), new_admin_page_path if signed_as_admin?

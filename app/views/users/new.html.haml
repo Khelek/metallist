@@ -1,0 +1,9 @@
+= simple_form_for @user, url: users_path(from: params[:from]), html: { class: 'form-type-login' } do |f|
+  .row
+    %h5= t '.user'
+    = f.input :email, tabindex: 1
+    = f.input :password, tabindex: 2
+    = f.input :password_confirmation
+    = f.input :first_name, input_html: { rows: 3 }
+    = f.input :last_name, input_html: { rows: 3 }
+    = f.button :submit, value: t('.login'), class: 'btn btn-shine'

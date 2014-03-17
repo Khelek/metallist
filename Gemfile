@@ -10,6 +10,8 @@ gem 'haml-rails'
 gem 'validates'
 gem 'simple_form'
 gem 'enumerize'
+gem 'virtus'
+gem 'state_machine'
 
 gem 'sqlite3'
 

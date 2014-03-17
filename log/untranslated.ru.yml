@@ -1,35 +1,27 @@
 ---
 ru:
-  welcome:
-    index:
-      map: ''
-      history: ''
-      news: ''
-      all_news: ''
-  news:
-    index:
-      add_news: ''
-  admin:
-    page:
-      index:
-        'no': ''
-      edit:
-        edit_news: ''
-        back: ''
-        edit_page: ''
-      new:
-        new_page: ''
-        back: ''
-    news:
-      edit:
-        edit_news: ''
-        view: ''
-        back: ''
-      new:
-        new_news: ''
-        view: ''
-  layouts:
-    admin:
-      shared:
-        navigation:
-          admin_home: ''
+  sessions:
+    new:
+      email: ''
+  users:
+    new:
+      user: ''
+      login: ''
+  success: ''
+  error: ''
+  activemodel:
+    errors:
+      models:
+        user_sign_in_type:
+          attributes:
+            email:
+              user_new: ''
+              user_or_password_invalid: ''
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              email: ''
+  password_not_valid: ''

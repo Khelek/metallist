@@ -1,4 +1,20 @@
 ru:
+  activemodel:
+    errors:
+      models:
+        user_sign_in_type:
+          attributes:
+            email:
+              user_or_password_invalid: "Почта или пароль введены неверно"
+              email: 'Введена некорректная почта'
+              user_new: 'Пожалуйста, активируйте свой аккаунт, перейдя по ссылке из письма.'
+              user_inactive: "Ваш аккаунт заблокирован. Для возобновления работы аккаунта обратитесь в оргкомитет сайта info@nastachku.ru"
+    
+  simple_form:
+    labels:
+      defaults:
+        email: 'Электронная почта'
+        password: "Пароль"
   layouts:
     header:
       RegionVtorMet: 'РегионВторМет'
@@ -28,6 +44,10 @@ ru:
       add_news: 'Добавить новость'
     show:
       '(edit)': '(Редактировать)'
+  users:
+    new:
+      user: 'Новый пользователь'
+      login: 'Создать'
   views:
     pagination:
       next: 'В конец'

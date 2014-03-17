@@ -6,7 +6,9 @@ Metallist::Application.routes.draw do
 
   resources :pages, only: :show
   resources :news
-  resource :session
+  resource :session, only: [:new, :create, :destroy]
+  resource :users
+  resources :account, only: :index
   namespace :admin do
     resources :page
     resources :news
