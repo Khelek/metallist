@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       user = @type.user
       flash_success
       sign_in user
-      redirect_to account_index_path
+      redirect_to account_root_path
     else
       render :new
     end

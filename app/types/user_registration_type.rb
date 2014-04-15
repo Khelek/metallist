@@ -1,7 +1,7 @@
 class UserRegistrationType < User
   include BasicType
 
-  attr_accessible :password_confirmation
+  attr_accessible :password, :password_confirmation
 
   #has_secure_password
 

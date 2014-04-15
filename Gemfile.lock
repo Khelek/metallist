@@ -67,6 +67,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
+    configus (0.0.5)
     descendants_tracker (0.0.1)
     docile (1.1.2)
     draper (1.2.1)
@@ -239,6 +240,7 @@ DEPENDENCIES
   carrierwave
   ckeditor
   coffee-rails (~> 3.2.1)
+  configus
   draper
   enumerize
   factory_girl_rails

@@ -11,15 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140316214719) do
-
-  create_table "admins", :force => true do |t|
-    t.string   "login"
-    t.string   "password"
-    t.string   "password_digest"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
-  end
+ActiveRecord::Schema.define(:version => 20140415204113) do
 
   create_table "ckeditor_assets", :force => true do |t|
     t.string   "data_file_name",                  :null => false
@@ -58,14 +50,13 @@ ActiveRecord::Schema.define(:version => 20140316214719) do
 
   create_table "users", :force => true do |t|
     t.string   "email"
-    t.string   "password"
     t.string   "password_digest"
     t.text     "first_name"
     t.text     "last_name"
     t.string   "state"
-    t.string   "role"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
+    t.boolean  "admin"
   end
 
 end

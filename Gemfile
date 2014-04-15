@@ -21,6 +21,7 @@ gem 'underscore-rails'
 
 gem 'draper'
 gem 'ckeditor'
+gem 'configus'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'rmagick'

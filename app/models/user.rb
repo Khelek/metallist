@@ -1,12 +1,10 @@
 class User < ActiveRecord::Base
-  extend Enumerize
-  attr_accessible :email, :first_name, :last_name, :password
+  attr_accessible :email, :first_name, :last_name, :password_digest
 
   validates :email, presence: true, uniqueness: {case_sensitive: false}, email: true
   validates :last_name, presence: true
   validates :first_name, presence: true
 
-  enumerize :role, in: [ :admin, :user ], default: :user
   state_machine :state, initial: :new do
     state :new
     state :active
@@ -37,7 +35,7 @@ class User < ActiveRecord::Base
     @real_password
   end
 
-  def admin?
-    self.role.admin?
+  def guest?
+    false
   end
 end
