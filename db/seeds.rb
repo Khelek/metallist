@@ -16,4 +16,9 @@ pages.each do |page|
   Page.create(page) if Page.where(slug: page[:slug]).empty?
 end
 
-admin = Admin.create({login: "adminMet", password: "vtorMet456a"}) if Admin.where(login: "adminMet").empty?
+admin = User.find_or_initialize_by_email "adminMet@admin"
+admin.password = "vtorMet456a"
+admin.first_name = "Админ"
+admin.last_name = "Админов"
+admin.admin = true
+admin.save!

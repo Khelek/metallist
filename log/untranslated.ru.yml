@@ -1,22 +1,5 @@
 ---
 ru:
-  sessions:
-    new:
-      email: ''
-  users:
-    new:
-      user: ''
-      login: ''
-  success: ''
-  error: ''
-  activemodel:
-    errors:
-      models:
-        user_sign_in_type:
-          attributes:
-            email:
-              user_new: ''
-              user_or_password_invalid: ''
   activerecord:
     errors:
       models:
@@ -24,4 +7,3 @@ ru:
           attributes:
             email:
               email: ''
-  password_not_valid: ''
