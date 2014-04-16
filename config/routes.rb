@@ -14,6 +14,7 @@ Metallist::Application.routes.draw do
   namespace :admin do
     resources :page
     resources :news
+    resources :items, except: :show
     root to: "welcome#index"
   end
 

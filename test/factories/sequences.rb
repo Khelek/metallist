@@ -52,4 +52,8 @@ FactoryGirl.define do
   sequence :code do |n|
     (100000000 + n).to_s
   end
+
+  sequence :integer, aliases: [:position, :group, :order, :custom_flavor_position, :weight, :quantity] do |n|
+    n
+  end
 end
