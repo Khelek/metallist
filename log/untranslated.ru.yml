@@ -1,10 +1,6 @@
 ---
 ru:
-  success: ''
   helpers:
-    links:
-      cancel: ''
-      edit: ''
-      destroy: ''
-      new: ''
     actions: ''
+    links:
+      new: ''
