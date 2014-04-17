@@ -1,13 +1,6 @@
 ---
 ru:
-  helpers:
-    links:
-      new: ''
-      cancel: ''
-      edit: ''
-      destroy: ''
-  success: ''
   account:
     welcome:
       index:
-        prices: ''
+        notifications: ''

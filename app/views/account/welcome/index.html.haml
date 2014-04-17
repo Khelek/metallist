@@ -1,5 +1,5 @@
 %h1 Личный кабинет
-%h4 Добро пожаловать в личный кабинет!
+%hr
 .row-fluid
   .span6
     %h4= t('.prices')
@@ -10,4 +10,13 @@
             = item.title
           %td
             = item.price
+  .span6.well
+    %h4= t('.notifications')
+    - @notifications.each do |notification|
+      .well
+        %h5
+          = notification.title
+        %br
+        = notification.body
+        =l notification.created_at.to_date
 = link_to 'Выйти', session_path, method: :delete, class: 'btn'
