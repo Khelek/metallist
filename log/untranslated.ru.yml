@@ -13,3 +13,6 @@ ru:
     links:
       new: ''
       cancel: ''
+      edit: ''
+      destroy: ''
+  success: ''

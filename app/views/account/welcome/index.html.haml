@@ -16,7 +16,7 @@
       .well
         %h5
           = notification.title
+        =l notification.created_at.to_date
         %br
         = notification.body
-        =l notification.created_at.to_date
 = link_to 'Выйти', session_path, method: :delete, class: 'btn'

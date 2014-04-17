@@ -52,3 +52,7 @@ ru:
     notifications:
       index:
         title: Оповещения
+      new:
+        title: Создать оповещение
+      edit:
+        title: Редактировать оповещение
