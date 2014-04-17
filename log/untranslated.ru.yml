@@ -1,18 +1,8 @@
 ---
 ru:
-  account:
-    welcome:
-      index:
-        notifications: ''
-  layouts:
-    admin:
-      shared:
-        navigation:
-          notifications: ''
   helpers:
     links:
-      new: ''
       cancel: ''
       edit: ''
       destroy: ''
-  success: ''
+      new: ''
