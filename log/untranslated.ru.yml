@@ -4,3 +4,12 @@ ru:
     welcome:
       index:
         notifications: ''
+  layouts:
+    admin:
+      shared:
+        navigation:
+          notifications: ''
+  helpers:
+    links:
+      new: ''
+      cancel: ''

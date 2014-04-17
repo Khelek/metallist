@@ -27,11 +27,16 @@ ru:
         title: Название
         price: Цена
         created_at: Добавлено
+      notification:
+        title: Тема
+        body: Текст
+        created_at: Дата
     models:
       news: 'новость'
       page: 'страницу'
       admin: 'Администратор'
       item: Наименование
+      notification: Оповещение
     errors:
       messages:
         password_is_wrong: 'не верный'

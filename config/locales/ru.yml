@@ -1,5 +1,4 @@
 ru:
-  actions: Действия
   activemodel:
     errors:
       models:
@@ -15,7 +14,7 @@ ru:
     labels:
       defaults:
         email: 'Электронная почта'
-        password: "Пароль"
+        piassword: "Пароль"
   layouts:
     header:
       RegionVtorMet: 'РегионВторМет'
@@ -37,6 +36,7 @@ ru:
           pages: 'Страницы'
           news: 'Новости'
           price_list: "Прайс-лист"
+          notifications: Оповещения
           logout: 'Выйти'
   pages:
     show:

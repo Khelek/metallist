@@ -49,3 +49,6 @@ ru:
         title: Добавить
       edit:
         title: Редактировать
+    notifications:
+      index:
+        title: Оповещения
