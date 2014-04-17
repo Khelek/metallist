@@ -8,12 +8,15 @@ Metallist::Application.routes.draw do
   resources :news
   resource :session, only: [:new, :create, :destroy]
   resource :users
+  resources :items, only: :index
   namespace :account do
     root to: "welcome#index"
   end
   namespace :admin do
     resources :page
     resources :news
+    resources :items, except: :show
+    resources :notifications, except: :show
     root to: "welcome#index"
   end
 

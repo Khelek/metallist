@@ -1,0 +1,19 @@
+- model_class = Item
+.page-header
+  %h1=t '.title', default: model_class.model_name.human.pluralize.titleize
+%table.table.table-striped
+  %thead
+    %tr
+      %th= model_class.human_attribute_name(:id)
+      %th= model_class.human_attribute_name(:title)
+      %th= model_class.human_attribute_name(:price)
+      %th= model_class.human_attribute_name(:created_at)
+      %th=t '.actions', default: t("helpers.actions")
+  %tbody
+    - @items.each do |item|
+      %tr
+        %td= link_to item.id, admin_item_path(item)
+        %td= item.title
+        %td= item.price
+        %td=l item.created_at
+        %td

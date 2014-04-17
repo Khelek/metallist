@@ -1,9 +1,10 @@
 ---
 ru:
-  activerecord:
-    errors:
-      models:
-        user:
-          attributes:
-            email:
-              email: ''
+  success: ''
+  helpers:
+    links:
+      cancel: ''
+      edit: ''
+      destroy: ''
+      new: ''
+    actions: ''
