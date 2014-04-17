@@ -38,3 +38,13 @@ ru:
           update:
             success: 'Страница обновлена'
             error: 'Не удалось обновить страницу'
+        items:
+          create:
+            success: "Пункт Прайс-листа добавлен"
+          update:
+            success: "Пункт Прайс-листа отредактирован"
+        notifications:
+          create:
+            success: Оповещение успешно добавлено
+          update:
+            success: Оповещение отредактировано
