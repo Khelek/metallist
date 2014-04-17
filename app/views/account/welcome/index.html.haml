@@ -1,4 +1,13 @@
 %h1 Личный кабинет
 %h4 Добро пожаловать в личный кабинет!
-%h4 Пока тут ничего нет, но скоро будет.
-= link_to 'Выйти', session_path, method: :delete
+.row-fluid
+  .span6
+    %h4= t('.prices')
+    %table.table.table-striped
+      - @items.each do |item|
+        %tr
+          %td
+            = item.title
+          %td
+            = item.price
+= link_to 'Выйти', session_path, method: :delete, class: 'btn'

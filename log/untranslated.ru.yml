@@ -1,10 +1,7 @@
 ---
 ru:
-  success: ''
-  helpers:
-    links:
-      cancel: ''
-      edit: ''
-      destroy: ''
-      new: ''
-    actions: ''
+  layouts:
+    admin:
+      shared:
+        navigation:
+          price_list: ''
