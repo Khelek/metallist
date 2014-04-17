@@ -42,3 +42,6 @@ ru:
       edit:
         edit_page: 'Редактировать страницу'
         back: 'Назад'
+    items:
+      index:
+        title: "Прайс-лист"

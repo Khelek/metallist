@@ -22,11 +22,16 @@ ru:
         place_in_side_navtabs: 'Поместить в боковое меню'
         created_at: 'Когда создана'
         actions: 'Действия'
-        body: 'Содержимое'          
+        body: 'Содержимое'
+      item:
+        title: Название
+        price: Цена
+        created_at: Добавлено
     models:
       news: 'новость'
       page: 'страницу'
       admin: 'Администратор'
+      item: Наименование
     errors:
       messages:
         password_is_wrong: 'не верный'

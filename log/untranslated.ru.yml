@@ -1,7 +1,5 @@
 ---
 ru:
-  layouts:
-    admin:
-      shared:
-        navigation:
-          price_list: ''
+  helpers:
+    links:
+      new: ''
