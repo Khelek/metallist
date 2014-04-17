@@ -1,5 +1,13 @@
 ---
 ru:
+  account:
+    welcome:
+      index:
+        prices: ''
   helpers:
     links:
+      cancel: ''
+      edit: ''
+      destroy: ''
       new: ''
+  success: ''

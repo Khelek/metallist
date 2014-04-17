@@ -45,3 +45,7 @@ ru:
     items:
       index:
         title: "Прайс-лист"
+      new:
+        title: Добавить
+      edit:
+        title: Редактировать
