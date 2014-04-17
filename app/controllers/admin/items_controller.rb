@@ -26,7 +26,7 @@ class Admin::ItemsController < Admin::ApplicationController
     @item = Item.find params[:id]
     if @item.update_attributes params[:item]
       flash_success
-      redirect_to edit_admin_item_path @item
+      redirect_to admin_items_path
     else
       flash_error
       render :new

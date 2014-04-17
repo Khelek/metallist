@@ -1,4 +1,4 @@
-class Admin::NotificationsController < ApplicationController
+class Admin::NotificationsController < Admin::ApplicationController
   def new
     @notification = Notification.new
   end
@@ -26,7 +26,7 @@ class Admin::NotificationsController < ApplicationController
     @notification = Notification.find params[:id]
     if @notification.update_attributes params[:notification]
       flash_success
-      redirect_to edit_admin_notification_path @notification
+      redirect_to admin_notifications_path
     else
       flash_error
       render :new

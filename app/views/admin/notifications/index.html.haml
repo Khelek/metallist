@@ -4,7 +4,6 @@
 %table.table.table-striped
   %thead
     %tr
-      %th= model_class.human_attribute_name(:id)
       %th= model_class.human_attribute_name(:title)
       %th= model_class.human_attribute_name(:body)
       %th= model_class.human_attribute_name(:created_at)
@@ -12,12 +11,11 @@
   %tbody
     - @notifications.each do |notification|
       %tr
-        %td= link_to notification.id
         %td= notification.title
         %td= notification.body
         %td=l notification.created_at
         %td
-          = link_to t('.edit', default: t("helpers.links.edit")), edit_admin_notification_path(notification), class: 'btn btn-mini'
-          = link_to t('.destroy', default: t("helpers.links.destroy")), admin_notification_path(notification), method: :delete, data: { confirm: t('.confirm', default: t("helpers.links.confirm", default: 'Are you sure?')) }, class: 'btn btn-mini btn-danger'
+          = link_to t('helpers.edit', default: t("helpers.links.edit")), edit_admin_notification_path(notification), class: 'btn btn-mini'
+          = link_to t('helpers.destroy', default: t("helpers.links.destroy")), admin_notification_path(notification), method: :delete, data: { confirm: t('.confirm', default: t("helpers.links.confirm", default: 'Are you sure?')) }, class: 'btn btn-mini btn-danger'
 
-= link_to t('.new', default: t("helpers.links.new")), new_admin_notification_path, class: 'btn btn-primary'
+= link_to t('helpers.new', default: t("helpers.links.new")), new_admin_notification_path, class: 'btn btn-primary'
