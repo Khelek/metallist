@@ -2,7 +2,16 @@
 ru:
   helpers:
     links:
-      cancel: ''
       edit: ''
       destroy: ''
-      new: ''
+  layouts:
+    admin:
+      shared:
+        navigation:
+          users: ''
+  success: ''
+  error: ''
+  admin:
+    welcome:
+      index:
+        users: ''

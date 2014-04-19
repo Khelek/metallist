@@ -6,3 +6,10 @@ ru:
     new: Добавить
     cancel: Отмена
     save: Сохранить
+    links:
+      cancel: Отмена
+      new: Добавить
+      edit: Изменить
+      destroy: Удалить
+    titles:
+      edit: Редактировать
