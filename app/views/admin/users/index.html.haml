@@ -8,6 +8,7 @@
       %th= model_class.human_attribute_name(:email)
       %th= model_class.human_attribute_name(:first_name)
       %th= model_class.human_attribute_name(:last_name)
+      %th= model_class.human_attribute_name(:company)
       %th= model_class.human_attribute_name(:admin)
       %th= model_class.human_attribute_name(:created_at)
       %th=t '.actions', default: t("helpers.actions")
@@ -18,6 +19,7 @@
         %td= user.email
         %td= user.first_name
         %td= user.last_name
+        %td= user.company
         %td= user.admin
         %td=l user.created_at
         %td
