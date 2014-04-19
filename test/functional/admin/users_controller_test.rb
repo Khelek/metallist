@@ -18,6 +18,7 @@ class Admin::UsersControllerTest < ActionController::TestCase
 
   test "should get create" do
     attrs = attributes_for :user
+    attrs[:password_confirmation] = attrs[:password]
     post :create, user: attrs
     assert_response :redirect
   end
@@ -29,10 +30,11 @@ class Admin::UsersControllerTest < ActionController::TestCase
 
   test "should get update" do
     attrs = attributes_for :user
+    attrs[:password_confirmation] = attrs[:password]
     put :update, id: @user, user: attrs
     assert_response :redirect
     @user.reload
-    assert attrs[:title], @user.title
+    assert attrs[:first_name], @user.first_name
   end
 
   test "should get destroy" do

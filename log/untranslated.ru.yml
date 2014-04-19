@@ -1,3 +1,7 @@
 ---
 ru:
-  error: ''
+  helpers:
+    links:
+      edit: ''
+      destroy: ''
+  success: ''

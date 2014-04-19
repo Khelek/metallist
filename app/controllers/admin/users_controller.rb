@@ -9,7 +9,6 @@ class Admin::UsersController < Admin::ApplicationController
 
   def create
     @user = UserRegistrationType.new params[:user]
-    binding.pry
     if @user.save
       flash_success
       redirect_to admin_users_path
