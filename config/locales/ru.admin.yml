@@ -1,5 +1,8 @@
 ru:
   admin:
+    users:
+      edit:
+        title: Редактировать пользователя
     welcome:
       index:
         welcome: 'Добро пожаловать в админку сайта!'
