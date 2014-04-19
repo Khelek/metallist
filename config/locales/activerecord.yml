@@ -10,6 +10,9 @@ ru:
         first_name: 'Имя'
         last_name: 'Фамилия'
         password_confirmation: 'Подтверждение пароля'
+        password_digest: Пароль
+        admin: Администратор
+        created_at: Создан
       news:
         title: 'Заголовок'
         published_at: 'Когда опубликована'
