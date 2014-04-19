@@ -27,10 +27,14 @@ ru:
         title: Название
         price: Цена
         created_at: Добавлено
+        user: "Пользователь, для которого предназначено"
+        for_all_users: Для всех пользователей
       notification:
         title: Тема
         body: Текст
         created_at: Дата
+        user: "Пользователь, для которого предназначено"
+        for_all_users: Для всех пользователей
     models:
       news: 'новость'
       page: 'страницу'

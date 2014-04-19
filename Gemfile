@@ -32,6 +32,7 @@ gem 'bootstrap-kaminari-views'
 
 gem 'twitter-bootstrap-rails'
 gem 'bootstrap_flash_messages'
+gem 'usefull_scopes'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -43,7 +44,7 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 
-  
+
   gem 'turbo-sprockets-rails3'
 end
 
