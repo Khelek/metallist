@@ -30,7 +30,6 @@ class Admin::UsersControllerTest < ActionController::TestCase
 
   test "should get update" do
     attrs = attributes_for :user
-    attrs[:password_confirmation] = attrs[:password]
     put :update, id: @user, user: attrs
     assert_response :redirect
     @user.reload

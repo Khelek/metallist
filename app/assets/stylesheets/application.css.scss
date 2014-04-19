@@ -20,7 +20,7 @@
 .title {
     h1 {
         font-size: 50px;
-        line-height: 52px; 
+        line-height: 52px;
     }
     h2>a {
         color: #333;
@@ -78,4 +78,8 @@ h1 .edit {
     font-size: 20px;
     margin-bottom: 4px;
     vertical-align: middle;
+}
+
+.link {
+  cursor: pointer
 }

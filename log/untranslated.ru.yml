@@ -11,3 +11,7 @@ ru:
           users: ''
   success: ''
   error: ''
+  admin:
+    welcome:
+      index:
+        users: ''
