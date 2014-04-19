@@ -13,6 +13,7 @@ ru:
         password_digest: Пароль
         admin: Администратор
         created_at: Создан
+        company: Компания
       news:
         title: 'Заголовок'
         published_at: 'Когда опубликована'
