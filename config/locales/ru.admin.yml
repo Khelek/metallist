@@ -3,6 +3,8 @@ ru:
     users:
       edit:
         title: Редактировать пользователя
+      index:
+        title: Пользователи
     welcome:
       index:
         welcome: 'Добро пожаловать в админку сайта!'
@@ -59,3 +61,16 @@ ru:
         title: Создать оповещение
       edit:
         title: Редактировать оповещение
+  layouts:
+    admin:
+      shared:
+        navigation:
+          admin_home: 'Главная админки'
+          home: 'Главная'
+          adminka: 'Админка'
+          pages: 'Страницы'
+          news: 'Новости'
+          price_list: "Прайс-лист"
+          notifications: Оповещения
+          logout: 'Выйти'
+          users: Пользователи

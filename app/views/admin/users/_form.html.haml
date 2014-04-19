@@ -1,10 +1,10 @@
 = simple_form_for @user, url: { action: action, controller: :users }, html: { class: 'form-horizontal' } do |f|
   = f.input :email
+  = f.input :old_password
   = f.input :password
-  = f.input :password_confirmation
   = f.input :first_name, as: :string
   = f.input :last_name, as: :string
-  = f.input :state
+  = f.input :state, as: :hidden
   = f.input :admin
   .form-actions
     = f.button :submit, class: 'btn-primary'

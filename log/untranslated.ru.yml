@@ -4,4 +4,10 @@ ru:
     links:
       edit: ''
       destroy: ''
+  layouts:
+    admin:
+      shared:
+        navigation:
+          users: ''
   success: ''
+  error: ''

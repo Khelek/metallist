@@ -9,5 +9,7 @@ ru:
     links:
       cancel: Отмена
       new: Добавить
+      edit: Изменить
+      destroy: Удалить
     titles:
       edit: Редактировать
