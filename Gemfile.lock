@@ -219,6 +219,7 @@ GEM
     untranslated (1.0.2)
       hash-deep-merge
       i18n
+    usefull_scopes (0.2.1)
     validates (0.0.8)
       activemodel (>= 3.0.0)
       activesupport (>= 3.0.0)
@@ -272,5 +273,6 @@ DEPENDENCIES
   underscore-rails
   unicorn
   untranslated
+  usefull_scopes
   validates
   virtus

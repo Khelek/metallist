@@ -1,6 +1,9 @@
 class User < ActiveRecord::Base
   attr_accessible :email, :first_name, :last_name, :password_digest
 
+  has_many :notifications
+  has_many :items
+
   validates :email, presence: true, uniqueness: {case_sensitive: false}, email: true
   validates :last_name, presence: true
   validates :first_name, presence: true
@@ -19,7 +22,7 @@ class User < ActiveRecord::Base
     end
 
   end
-  
+
   def authenticate(password)
     self.password_digest == Digest::MD5.hexdigest(password)
   end
