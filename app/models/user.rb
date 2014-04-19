@@ -1,5 +1,11 @@
 class User < ActiveRecord::Base
-  attr_accessible :email, :first_name, :last_name, :password_digest, :state, :admin
+  attr_accessible :email,
+                  :first_name,
+                  :last_name,
+                  :password_digest,
+                  :state,
+                  :admin,
+                  :company
 
   has_many :notifications
   has_many :items
