@@ -17,6 +17,7 @@ Metallist::Application.routes.draw do
     resources :news
     resources :items, except: :show
     resources :notifications, except: :show
+    resources :users, except: :show
     root to: "welcome#index"
   end
 

@@ -1,8 +1,3 @@
 ---
 ru:
-  helpers:
-    links:
-      cancel: ''
-      edit: ''
-      destroy: ''
-      new: ''
+  error: ''
