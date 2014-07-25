@@ -32,8 +32,8 @@ gem 'bootstrap-kaminari-views'
 
 gem 'twitter-bootstrap-rails'
 gem 'bootstrap_flash_messages'
+gem 'therubyracer', platforms: :ruby
 gem 'usefull_scopes'
-gem 'therubyracer'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -44,7 +44,6 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
-
 
   gem 'turbo-sprockets-rails3'
 end
