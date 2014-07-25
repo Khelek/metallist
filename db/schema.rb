@@ -11,15 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140227211847) do
-
-  create_table "admins", :force => true do |t|
-    t.string   "login"
-    t.string   "password"
-    t.string   "password_digest"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
-  end
+ActiveRecord::Schema.define(:version => 20140419072639) do
 
   create_table "ckeditor_assets", :force => true do |t|
     t.string   "data_file_name",                  :null => false
@@ -37,6 +29,15 @@ ActiveRecord::Schema.define(:version => 20140227211847) do
   add_index "ckeditor_assets", ["assetable_type", "assetable_id"], :name => "idx_ckeditor_assetable"
   add_index "ckeditor_assets", ["assetable_type", "type", "assetable_id"], :name => "idx_ckeditor_assetable_type"
 
+  create_table "items", :force => true do |t|
+    t.text     "title"
+    t.integer  "price"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+    t.integer  "user_id"
+    t.boolean  "for_all_users"
+  end
+
   create_table "news", :force => true do |t|
     t.text     "body"
     t.date     "published_at"
@@ -44,6 +45,15 @@ ActiveRecord::Schema.define(:version => 20140227211847) do
     t.text     "photo"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+  end
+
+  create_table "notifications", :force => true do |t|
+    t.text     "title"
+    t.text     "body"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+    t.integer  "user_id"
+    t.boolean  "for_all_users"
   end
 
   create_table "pages", :force => true do |t|
@@ -54,6 +64,18 @@ ActiveRecord::Schema.define(:version => 20140227211847) do
     t.datetime "created_at",            :null => false
     t.datetime "updated_at",            :null => false
     t.string   "slug"
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "email"
+    t.string   "password_digest"
+    t.text     "first_name"
+    t.text     "last_name"
+    t.string   "state"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+    t.boolean  "admin"
+    t.text     "company"
   end
 
 end

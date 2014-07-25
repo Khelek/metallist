@@ -1,4 +1,20 @@
 ru:
+  activemodel:
+    errors:
+      models:
+        user_sign_in_type:
+          attributes:
+            email:
+              user_or_password_invalid: "Почта или пароль введены неверно"
+              email: 'Введена некорректная почта'
+              user_new: 'Пожалуйста, активируйте свой аккаунт, перейдя по ссылке из письма.'
+              user_inactive: "Ваш аккаунт заблокирован. Для возобновления работы аккаунта обратитесь в оргкомитет сайта info@nastachku.ru"
+
+  simple_form:
+    labels:
+      defaults:
+        email: 'Электронная почта'
+        piassword: "Пароль"
   layouts:
     header:
       RegionVtorMet: 'РегионВторМет'
@@ -19,6 +35,8 @@ ru:
           adminka: 'Админка'
           pages: 'Страницы'
           news: 'Новости'
+          price_list: "Прайс-лист"
+          notifications: Оповещения
           logout: 'Выйти'
   pages:
     show:
@@ -28,6 +46,10 @@ ru:
       add_news: 'Добавить новость'
     show:
       '(edit)': '(Редактировать)'
+  users:
+    new:
+      user: 'Новый пользователь'
+      login: 'Создать'
   views:
     pagination:
       next: 'В конец'
@@ -47,50 +69,6 @@ ru:
   sessions:
     new:
       login: 'Войти'
-  admin:
-    welcome:
-      index:
-        welcome: 'Добро пожаловать в админку сайта!'
-    news:
-      form:
-        prohibite_this_news_from_being_saved: зафиксировано во время сохранения
-        no_more_than_140_characters:          Не больше 140 символов
-        this_is_main_photo: Это фото будет отображаться как главное фото в новости
-      index:
-        add_news: 'Добавить новость'
-        title: 'Новости'
-        edit: 'Редактировать'
-        new: 'Создать новость'
-        destroy: 'Удалить'
-        confirm: 'Правда хотите удалить новость?'
-      new:
-        new_news: 'Создать новость'
-        add_news: 		Добавить новость
-        back: 			Назад
-      edit:
-        edit_news: 'Редактировать новость'
-        back: 'Назад'
-    page:
-      form:
-        no_more_than_140_characters:          Не больше 140 символов
-      index:
-        'no': 'Нет'
-        'yes': 'Да'
-        link_to_page: 'Ссылка на страницу'
-        yes: 'Да'
-        no: 'Нет'
-        title: 'Страницы'
-        edit: 'Редактировать'
-        new: 'Создать страницу'
-        destroy: 'Удалить'
-        confirm: 'Правда хотите удалить страницу?'
-      new:
-        new_page: 'Создать страницу' 
-        back: 'Назад'
-      edit:
-        edit_page: 'Редактировать страницу'
-        back: 'Назад'
-
   days:
     day: день
     few_days: дня

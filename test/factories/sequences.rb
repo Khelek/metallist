@@ -12,7 +12,7 @@ FactoryGirl.define do
     n
   end
 
-  [:company, :slug, :title, :thesises, :body, :photo, :description, :about, :color].each do |trait|
+  [:string, :company, :slug, :title, :thesises, :body, :photo, :description, :about, :color].each do |trait|
     sequence trait do |n|
       "#{trait}_#{n}"
     end
@@ -51,5 +51,9 @@ FactoryGirl.define do
 
   sequence :code do |n|
     (100000000 + n).to_s
+  end
+
+  sequence :integer, aliases: [:position, :group, :order, :custom_flavor_position, :weight, :quantity] do |n|
+    n
   end
 end

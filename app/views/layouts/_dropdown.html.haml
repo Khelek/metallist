@@ -4,5 +4,7 @@
     %b.caret
   %ul.dropdown-menu
     - for_dropdown_slug_pages.each do |slug|
-      - page = slug_pages.select{|page| page.slug == slug}.first
-      %li= link_to page.title, page_path(page)
+      -#FIXME убрать переменные из вьюх О_О
+      - page = slug_pages.select{ |page| page.slug == slug }.first
+      - if page
+        %li= link_to page.title, page_path(page)

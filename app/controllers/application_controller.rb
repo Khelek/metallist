@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
-  include AuthHelper
+  include Concerns::AuthManagment
   include FlashHelper
-  helper_method :sign_in, :sign_out, :signed_as_admin?
+  helper_method :current_user, :signed_in?, :signed_as_admin?
   
   protect_from_forgery
 end

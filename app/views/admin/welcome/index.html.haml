@@ -1,1 +1,7 @@
 %h1= t '.welcome'
+%hr
+.row
+  .link.span6.well{ onclick: "return location.href='#{admin_users_path}'" }
+    %h4
+      = t('.users')
+      = @users_count

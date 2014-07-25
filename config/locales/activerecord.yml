@@ -4,6 +4,16 @@ ru:
       admin:
         login: Логин
         password: Пароль
+      user:
+        email: 'Электрoнная почта'
+        password: 'Пароль'
+        first_name: 'Имя'
+        last_name: 'Фамилия'
+        password_confirmation: 'Подтверждение пароля'
+        password_digest: Пароль
+        admin: Администратор
+        created_at: Создан
+        company: Компания
       news:
         title: 'Заголовок'
         published_at: 'Когда опубликована'
@@ -16,9 +26,29 @@ ru:
         place_in_side_navtabs: 'Поместить в боковое меню'
         created_at: 'Когда создана'
         actions: 'Действия'
-        body: 'Содержимое'          
+        body: 'Содержимое'
+      item:
+        title: Название
+        price: Цена
+        created_at: Добавлено
+        user: "Пользователь, для которого предназначено"
+        for_all_users: Для всех пользователей
+      notification:
+        title: Тема
+        body: Текст
+        created_at: Дата
+        user: "Пользователь, для которого предназначено"
+        for_all_users: Для всех пользователей
     models:
       news: 'новость'
       page: 'страницу'
       admin: 'Администратор'
-        
+      item: Наименование
+      notification: Оповещение
+    errors:
+      messages:
+        password_is_wrong: 'не верный'
+        password_not_valid: 'Пароль должен быть от 5 до 30 символов'
+        blank: 'Поле не может быть пустым'
+        confirmation: 'Не совпадает с подтверждением'
+        user_should_not_exists: 'Пользователь с таким email не найден!'

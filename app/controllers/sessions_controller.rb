@@ -1,16 +1,18 @@
 class SessionsController < ApplicationController
   def new
-    @admin = Admin.new
+    @type = UserSignInType.new
   end
 
   def create
-    @admin = Admin.where(login: params[:admin][:login]).first
-    if @admin and @admin.authenticate(params[:admin][:password])
-      sign_in @admin
+    @type = UserSignInType.new params[:user_sign_in_type]
+
+    if @type.valid?
+      user = @type.user
       flash_success
-      redirect_to admin_root_path, flash: :success
+      sign_in user
+      redirect_to account_root_path
     else
-      redirect_to new_session_path, flash: :error
+      render :new
     end
   end
 

@@ -1,0 +1,22 @@
+%h1 Личный кабинет
+%hr
+.row-fluid
+  .span6
+    %h4= t('.prices')
+    %table.table.table-striped
+      - @items.each do |item|
+        %tr
+          %td
+            = item.title
+          %td
+            = item.price
+  .span6.well
+    %h4= t('.notifications')
+    - @notifications.each do |notification|
+      .well
+        %h5
+          = notification.title
+        =l notification.created_at.to_date
+        %br
+        = notification.body
+= link_to 'Выйти', session_path, method: :delete, class: 'btn'

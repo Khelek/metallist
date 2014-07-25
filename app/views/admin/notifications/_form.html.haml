@@ -1,0 +1,9 @@
+= simple_form_for @notification, url: { action: action, controller: :notifications }, html: { class: 'form-horizontal' } do |f|
+  - f.with_options input_html: { class: :span6 } do |f|
+    = f.input :title, as: :string
+    = f.input :body
+    = f.input :for_all_users, input_html: { value: false }
+    = f.association :user, label_method: lambda { |user| "#{user.first_name} #{user.last_name}" }, value_method: :id
+  .form-actions
+    = f.button :submit, t('helpers.save'), class: 'btn btn-primary'
+    = link_to t('helpers.cancel', default: t("helpers.links.cancel")), admin_notifications_path, class: 'btn'

@@ -1,0 +1,77 @@
+ru:
+  admin:
+    users:
+      edit:
+        title: Редактировать пользователя
+      index:
+        title: Пользователи
+    welcome:
+      index:
+        welcome: 'Добро пожаловать в админку сайта!'
+        users: Зарегистрированные пользователи
+    news:
+      form:
+        prohibite_this_news_from_being_saved: зафиксировано во время сохранения
+        no_more_than_140_characters:          Не больше 140 символов
+        this_is_main_photo: Это фото будет отображаться как главное фото в новости
+      index:
+        add_news: 'Добавить новость'
+        title: 'Новости'
+        edit: 'Редактировать'
+        new: 'Создать новость'
+        destroy: 'Удалить'
+        confirm: 'Правда хотите удалить новость?'
+      new:
+        new_news: 'Создать новость'
+        add_news: 		Добавить новость
+        back: 			Назад
+      edit:
+        edit_news: 'Редактировать новость'
+        back: 'Назад'
+    page:
+      form:
+        no_more_than_140_characters:          Не больше 140 символов
+      index:
+        'no': 'Нет'
+        'yes': 'Да'
+        link_to_page: 'Ссылка на страницу'
+        yes: 'Да'
+        no: 'Нет'
+        title: 'Страницы'
+        edit: 'Редактировать'
+        new: 'Создать страницу'
+        destroy: 'Удалить'
+        confirm: 'Правда хотите удалить страницу?'
+      new:
+        new_page: 'Создать страницу'
+        back: 'Назад'
+      edit:
+        edit_page: 'Редактировать страницу'
+        back: 'Назад'
+    items:
+      index:
+        title: "Прайс-лист"
+      new:
+        title: Добавить
+      edit:
+        title: Редактировать
+    notifications:
+      index:
+        title: Оповещения
+      new:
+        title: Создать оповещение
+      edit:
+        title: Редактировать оповещение
+  layouts:
+    admin:
+      shared:
+        navigation:
+          admin_home: 'Главная админки'
+          home: 'Главная'
+          adminka: 'Админка'
+          pages: 'Страницы'
+          news: 'Новости'
+          price_list: "Прайс-лист"
+          notifications: Оповещения
+          logout: 'Выйти'
+          users: Пользователи

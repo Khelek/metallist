@@ -10,6 +10,8 @@ gem 'haml-rails'
 gem 'validates'
 gem 'simple_form'
 gem 'enumerize'
+gem 'virtus'
+gem 'state_machine'
 
 gem 'sqlite3'
 
@@ -19,6 +21,7 @@ gem 'underscore-rails'
 
 gem 'draper'
 gem 'ckeditor'
+gem 'configus'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'rmagick'
@@ -30,6 +33,7 @@ gem 'bootstrap-kaminari-views'
 gem 'twitter-bootstrap-rails'
 gem 'bootstrap_flash_messages'
 gem 'therubyracer', platforms: :ruby
+gem 'usefull_scopes'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
